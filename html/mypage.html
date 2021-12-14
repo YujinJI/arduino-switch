@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arduino project</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://kit.fontawesome.com/a5dc1e6b68.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg">
+  <div class="custom-shape-divider-top-1639346469">
+    <svg data-name="Layer 1" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+  </div>  
+  <div class="mypage-container">
+    <div id="my-title"></div>
+    <button id="devices">등록된 기기 목록</button>
+    <button id="device-register">새로운 기기 등록</button>
+    <div class="register-form-container">
+      <div class="close-btn">
+        <button id="register-close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <h2>Device registration</h2>
+      <p>양식에 맞추어 기기를 등록해주세요!</p>
+      <div class="form-group">
+        <input type="text" id="register-id" placeholder="아이디 입력">
+      </div>
+      <div class="form-group">
+        <input type="text" id="device-id" placeholder="기기 이름 입력">
+      </div>
+      <div class="submit-button">
+        <button id="device-register-btn">완료</button>
+      </div>
+    </div>
+    <div id="my-devices">
+      <!-- <button id="modify-btn">수정</button>
+      <button id="delete-btn">삭제</button>
+      </div> -->
+    </div>
+    <div class="modify-form-container">
+      <div class="close-btn">
+        <button id="modify-close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <h2>Modify device</h2>
+      <p>양식에 맞추어 기기를 수정해주세요!</p>
+      <!-- <div class="form-group">
+        <input type="number" id="modify-ths" placeholder="ths 입력">
+      </div> -->
+      <div class="flex">
+        <div class="slider-over-text">항상꺼짐</div>
+        <div class="slider-over-text">항상켜짐</div>
+      </div>
+      <div id="slider-ths"></div>
+      <div id="sliderText">슬라이더를 움직여 보세요!</div>
+      <div class="form-group radio">
+        <!-- <input type="number" id="modify-typ" placeholder="type 입력"> -->
+        <input type="radio" id="modify-typ-0" name="typ" value="0">단방향<img src="/img/oneway.svg">
+        <!-- <label for="modify-typ-0"><img src="/img/switch.drawio (1).svg"></label> -->
+      </div>
+      <div class="form-group radio">
+        <input type="radio" id="modify-typ-1" name="typ" value="1">양방향<img src="/img/twoway.svg">
+        <!-- <label for="modify-typ-1"><img src="/img/switch.drawio.svg"></label> -->
+      </div>
+      <div class="submit-button">
+        <button id="device-modify-btn">완료</button>
+      </div>
+    </div>
+    <div id="my-device-info">
+      
+    </div>
+  </div>
+  <div id="toast"></div>
+</body>
+<script src="../js/main.js"></script>
+<script src="../js/mypage.js"></script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arduino project</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/a5dc1e6b68.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <h1>Smart Switch</h1>
+	<section class="animation">
+		<article class="sky">
+			<img src="../img/sun.png" class="sun" />
+			<img src="../img/cloud1.png" class="cloud1" />
+			<img src="../img/cloud2.png" class="cloud2" />
+		</article>
+		<article class="town">
+			<img src="../img/circle.png" class="circle" />
+			<img src="../img/town_night.png" class="night" />
+			<img src="../img/town_day.png" class="day" />
+		</article>
+		<article class="people">
+			<img src="../img/man.png" class="man" />
+			<img src="../img/family.png" class="family" />
+		</article>
+  </section>
+  <section class="goto">
+    <button id="login-btn">로그인 하러가기</button>
+    <button id="signup-btn">회원가입 하러가기</button>
+  </section>
+  <section class="pop-up">
+    <div class="login-form-container">
+      <div class="close-btn">
+        <button id="login-close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <h2>Login</h2>
+      <p>양식에 맞추어 로그인을 진행해주세요!</p>
+      <div class="form-group">
+        <input type="text" id="login-id" placeholder="아이디 입력">
+      </div>
+      <div class="form-group">
+        <input type="password" id="login-pw" placeholder="비밀번호 입력">
+      </div>
+      <div class="submit-button">
+        <!-- <input type="submit" id="login" value="완료"> -->
+        <button id="login">로그인</button>
+      </div>
+      <div class="go-signup">
+        <p>아직 회원이 아니신가요?</p>
+        <button id="go-signup">회원가입 하러가기 🚀</button>
+      </div>
+      <div id="message"></div>
+    </div>
+    <!-- 회원가입 -->
+    <div class="signup-form-container">
+      <div class="close-btn">
+        <button id="signup-close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <h2>Sign up</h2>
+      <p>양식에 맞추어 회원가입을 진행해주세요!</p>
+      <div class="form-group">
+        <input type="text" id="signup-id" placeholder="아이디 입력">
+      </div>
+      <div class="form-group">
+        <input type="password" id="signup-pw" placeholder="비밀번호 입력">
+      </div>
+      <div class="submit-button">
+        <button id="sign-up">완료</button>
+      </div>
+      <div class="go-login">
+        <p>이미 회원가입을 하셨나요?</p>
+        <button id="go-login">로그인 하러가기 🚀</button>
+      </div>
+    </div>
+  </section>
+  <div id="toast">토스트</div>
+</body>
+<script src="../js/main.js"></script>
+</html>
