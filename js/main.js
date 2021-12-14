@@ -1,4 +1,4 @@
-var address = "https://jujinji.ml"
+var address = "https://yujinji.ml"
 
 
 // cookie를 설정하는 setCookie 함수
