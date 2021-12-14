@@ -103,7 +103,7 @@ $(document).ready(() => {
           $('.form-container').addClass('hidden');
           toast('로그인에 성공하였습니다!');
           setTimeout(function() {
-            $(location).attr("href", "/html/mypage.html");
+            $(location).attr("href", "../html/mypage.html");
           }, 2200);
         },
         error: function(data){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
